@@ -20,6 +20,7 @@ import {
   PendingActions,
   AdminPanelSettings,
   Person,
+  AddCard,
 } from '@mui/icons-material';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
@@ -37,6 +38,7 @@ const Sidebar = ({ open, onClose, width }) => {
         return [
           { text: 'Dashboard', icon: <Dashboard />, path: ROUTES.BANKER_DASHBOARD },
           { text: 'Customers', icon: <People />, path: ROUTES.BANKER_CUSTOMERS },
+          { text: 'Create Account', icon: <AddCard />, path: ROUTES.BANKER_CREATE_ACCOUNT },
           { text: 'Pending Approvals', icon: <PendingActions />, path: ROUTES.BANKER_PENDING },
         ];
       case ROLES.ADMIN:

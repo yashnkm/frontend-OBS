@@ -14,7 +14,7 @@ import { BillPayment, ScheduledPayments } from '../pages/BillPay';
 import { Profile } from '../pages/Profile';
 
 // Banker Pages
-import { BankerDashboard, CustomerList, PendingApprovals } from '../pages/Banker';
+import { BankerDashboard, CustomerList, PendingApprovals, CreateAccount } from '../pages/Banker';
 
 // Admin Pages
 import { AdminDashboard, UserManagement } from '../pages/Admin';
@@ -53,6 +53,7 @@ const AppRoutes = () => {
       >
         <Route path={ROUTES.BANKER_DASHBOARD} element={<BankerDashboard />} />
         <Route path={ROUTES.BANKER_CUSTOMERS} element={<CustomerList />} />
+        <Route path={ROUTES.BANKER_CREATE_ACCOUNT} element={<CreateAccount />} />
         <Route path={ROUTES.BANKER_PENDING} element={<PendingApprovals />} />
       </Route>
 

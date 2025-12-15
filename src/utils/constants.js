@@ -97,6 +97,7 @@ export const ROUTES = {
   BANKER_DASHBOARD: '/banker/dashboard',
   BANKER_CUSTOMERS: '/banker/customers',
   BANKER_PENDING: '/banker/pending',
+  BANKER_CREATE_ACCOUNT: '/banker/create-account',
 
   // Admin
   ADMIN_DASHBOARD: '/admin/dashboard',
