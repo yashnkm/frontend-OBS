@@ -1,0 +1,9 @@
+export const selectAuth = (state) => state.auth;
+export const selectUser = (state) => state.auth.user;
+export const selectIsAuthenticated = (state) => !!state.auth.accessToken;
+export const selectUserRole = (state) => state.auth.user?.role;
+export const selectUserId = (state) => state.auth.user?.id;
+export const selectAuthLoading = (state) => state.auth.loading;
+export const selectAuthError = (state) => state.auth.error;
+export const selectRegisterSuccess = (state) => state.auth.registerSuccess;
+export const selectIsActive = (state) => state.auth.user?.active;
